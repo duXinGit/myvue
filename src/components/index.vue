@@ -1,10 +1,10 @@
 <template>
   <div class="hello">
-    <router-link v-bind:to="'/'">home</router-link>
-    <router-link v-bind:to="'/about'">about</router-link>
+    <router-link :to="'/'">home</router-link>
+    <router-link :to="'/about'">about</router-link>
     <h1>{{ msg }}</h1>
     <ul>
-      <li><a href="/list">点击跳转</a></li>
+      <li><a :href="'/list'">点击跳转</a></li>
     </ul>
   </div>
 </template>
