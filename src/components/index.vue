@@ -4,7 +4,7 @@
     <router-link :to="'/about'">about</router-link>
     <h1>{{ msg }}</h1>
     <ul>
-      <li><a :href="'/list'">点击跳转</a></li>
+      <li><router-link :to="'/list'">点击跳转</router-link></li>
     </ul>
   </div>
 </template>
@@ -37,6 +37,6 @@ li {
 }
 
 a {
-  color: #42b983;
+  color: #999;
 }
 </style>

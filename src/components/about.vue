@@ -1,8 +1,8 @@
 <template>
   <div id="about">
     <div>
-      <router-link v-bind:to="'/'">Home</router-link>
-      <router-link v-bind:to="'/list'">list</router-link>
+      <router-link :to="'/'">Home</router-link>
+      <router-link :to="'/list'">list</router-link>
     </div>
     <h2>{{ msg }}</h2>
     When you have a great story about how your product or service was built to change lives, share it. The "About Us" page is a great place for it to live, too. Good stories humanize your brand, providing context and meaning for your product. What’s more, good stories are sticky -- which means people are more likely to connect with them and pass them on.
@@ -20,7 +20,7 @@
   }
 </script>
 <!-- styling for the component -->
-<style>
+<style scoped>
   #about {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -32,5 +32,6 @@
 
   a {
     color: #42b983;
+    text-decoration: none;
   }
 </style>
