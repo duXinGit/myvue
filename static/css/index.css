@@ -1,3 +1,6 @@
 strong{
   font-weight: normal;
 }
+strong i {
+  font-size: large;
+}
